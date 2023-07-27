@@ -26,52 +26,48 @@
   </style>
 </head>
 
-<body>
+<body class="lato">
   <header>
-
-    <nav class="container mx-auto px-5 md:py-3 md:bg-bg-color rounded-full my-5">
-      <div class="navbar bg-base-100">
+    <!-- nav section start here -->
+    <nav class="max-w-5xl mx-auto ">
+      <div class="navbar bg-error rounded-full my-10">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
+               <div class=" hidden md:flex px-5 capitalize text-white ">
+                <ul class="flex">
+                  <li class="mr-4" >home</li>
+                  <li class="mr-4" >About Us</li>
+                  <li class="mr-4" >Shop</li>
+                  <li class="mr-4" >All Fruits</li>
+                 </ul>                
+
+
+               </div>
           </div>
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+         
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li tabindex="0">
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
+         
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+             
+         <div class="  md:w-1/4 space-x-4">
+          <img src="./img/logo.png" alt="">
+          <h2 class="text-white text-xl">Fruit Burst</h2>
+         </div>
+
+        <div class="navbar-end relative p-3 rounded-full bg-white hidden md:flex ">
+           <input type="email" name="email" id="">
+           <i class="fa-solid fa-magnifying-glass absolute  "></i>
         </div>
       </div>
     </nav>
 
-    <div class="max-w-5xl mx-auto  relative ">
+    <!-- nav section end  -->
+
+    <div class="max-w-5xl mx-auto  relative  sm:flex-row-reverse">
       <div class="carousel w-full rounded-lg ">
         <div id="slide1" class="carousel-item relative w-full">
           <div class="hero min-h-screen" style="background-image: url(./img/banner1.png);">
@@ -167,7 +163,7 @@
   <main>
 
     <!-- Deal of the day -->
-    <div class=" grid grid-cols md:grid-cols-2 lg:grid-cols-2 py-20 max-w-5xl mx-auto gap-28 items-center m-20 ">
+    <div class=" grid grid-cols md:grid-cols-2 lg:grid-cols-2 py-20 max-w-5xl mx-auto gap-28 items-center    md:m-20 ">
       <div class="deal-contact space-y-2 flex-1">
         <h2 class="text-4xl font-bold">Deal of the day</h2>
         <p class="text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
@@ -308,24 +304,21 @@
     <button class="bg-error p-3 px-4 rounded-lg text-center capitalize">shop all</button>
   </div>
 
-
-
-
   <!-- Deal of the day  end -->
   <!-- Meet the team section start -->
 
   <div class="max-w-5xl mx-auto my-24">
-    <div class="hero h-[450px]" style="background-image: url(./img/team.png);">
+    <div class="hero h-auto" style="background-image: url(./img/team.png);">
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-center text-neutral-content">
         <div class="">
-          <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+          <h1 class="mb-5 md:text-5xl font-bold sm:text-3xl mb-1 ">Meet the team section</h1>
           <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
             <br> Latin literature from 45 BC, making it over 2000 years old.
           </p>
           <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 ">
             <div>
-              <img class="" src="./img/member1.png" alt="">
+              <img class=" mx-auto " src="./img/member1.png" alt="">
               <h2 class="font-bold">Awlad Hossain</h2>
               <p>Fruits Expert</p>
               <span><i class="fa-brands fa-facebook text-error "></i></span>
@@ -333,7 +326,7 @@
               <span><i class="fa-brands fa-linkedin  text-error"></i></span>
             </div>
             <div>
-              <img class="" src="./img/member2.png" alt="">
+              <img class="mx-auto" src="./img/member2.png" alt="">
               <h2 class="font-bold">Safia Chowdhury</h2>
               <p>Fruits Expert</p>
               <span><i class="fa-brands fa-facebook text-error "></i></span>
@@ -341,7 +334,7 @@
               <span><i class="fa-brands fa-linkedin  text-error"></i></span>
             </div>
             <div class="">
-              <img class="" src="./img/member3.png" alt="">
+              <img class="mx-auto" src="./img/member3.png" alt="">
               <h2 class="font-bold">Rokib Hossain</h2>
               <p>Fruits Expert</p>
               <span><i class="fa-brands fa-facebook text-error "></i></span>
@@ -349,7 +342,7 @@
               <span><i class="fa-brands fa-linkedin  text-error"></i></span>
             </div>
             <div>
-              <img class="" src="./img/member4.png" alt="">
+              <img class="mx-auto" src="./img/member4.png" alt="">
               <h2 class="font-bold">Chaity</h2>
               <p>Fruits Expert</p>
               <span><i class="fa-brands fa-facebook text-error "></i></span>
@@ -409,7 +402,6 @@
 
         </div>
        
-
       </div>
 
       <div class="order-1 md:order-none w-full mx-auto"> 
